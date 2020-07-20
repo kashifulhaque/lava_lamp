@@ -1,8 +1,8 @@
 use piston_window::*;
 use rand::*;
 
-const HEIGHT: f64 = 1280.0;
-const WIDTH: f64 = 720.0;
+const HEIGHT: f64 = 720.0;
+const WIDTH: f64 = 1280.0;
 
 struct Bubble {
     speed: f64,
@@ -30,8 +30,8 @@ impl Bubble {
 }
 
 fn main() -> () {
-    let bub = [1.0, 0.4, 0.0, 1.0];
-    let bg = [0.4, 0.86, 0.07, 1.0];
+    let bub = [1.0, 0.0, 0.0, 1.0];
+    let bg = [0.0, 1.0, 1.0, 1.0];
     let mut bubbles: Vec<Bubble> = get_bubbles();
     let mut window: PistonWindow = WindowSettings::new("Lava Lamp", [WIDTH, HEIGHT])
         .exit_on_esc(true)
